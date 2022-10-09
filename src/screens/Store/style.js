@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-const estilos = StyleSheet.create({
+const styles = StyleSheet.create({
   wrapperTitle: {
     width: "85%",
     borderWidth: 1,
@@ -16,22 +16,37 @@ const estilos = StyleSheet.create({
   },
   title: {
     fontWeight: "bold",
-    marginTop: 32,
-    marginBottom: 8,
-    paddingHorizontal: "41%",
-    fontSize: 20,
+    fontSize: 22,
     lineHeight: 32,
-    width: "100%",
-    height: "100%",
+    fontFamily: "KarlaBold",
+    fontWeight: "500",
+    marginLeft: "30%",
+    marginRight: "20%",
   },
   subtitle: {
     fontSize: 20,
-    fontWeight: "bold",
     textAlign: "center",
+    fontFamily: "KarlaBold",
     width: "100%",
     textDecorationLine: "underline",
-    padding: 20,
+    paddingTop: 20,
+    fontWeight: "800",
+  },
+  card: {
+    backgroundColor: "rgba(208, 237, 237, 0.5)",
+    margin: 30,
+    padding: 15,
+    borderRadius: 8,
+  },
+  text: {
+    fontWeight: "bold",
+    marginBottom: 20,
+    fontWeight: "900",
+    fontSize: 14,
+  },
+  icon: {
+    marginLeft: 50,
   },
 });
 
-export default estilos;
+export default styles;

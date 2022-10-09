@@ -1,17 +1,19 @@
 import { StyleSheet } from "react-native";
 
-const estilos = StyleSheet.create({
+const styles = StyleSheet.create({
   wrapper: {
     flexDirection: "row",
     width: "100%",
+    paddingVertical: 5,
   },
   keyText: {
     textTransform: "uppercase",
     width: "50%",
+    fontWeight: "bold",
   },
   valueText: {
     width: "50%",
   },
 });
 
-export default estilos;
+export default styles;
