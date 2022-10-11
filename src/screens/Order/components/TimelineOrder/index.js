@@ -1,10 +1,5 @@
 import React from "react";
-import { View } from "react-native";
-import { Chip, Text } from "@react-native-material/core";
-import Icon from "@expo/vector-icons/MaterialCommunityIcons";
-import styles from "./style";
-import IconTemplate from "./../../../../components/Icon/index";
-import ItemTimelineOrder from "./../ItemTimelineOrder/index";
+import ItemTimelineOrder from "../ItemTimelineOrder/index";
 
 const TimelineOrder = () => {
   const statusOrder = [

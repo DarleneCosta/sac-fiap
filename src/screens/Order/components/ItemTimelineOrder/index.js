@@ -1,9 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import { Chip, Text } from "@react-native-material/core";
-import Icon from "@expo/vector-icons/MaterialCommunityIcons";
+import {  Text } from "@react-native-material/core";
 import styles from "./style";
 import IconTemplate from "./../../../../components/Icon/index";
+import colors from "../../../../styles/colors";
 
 const ItemTimelineOrder = ({ status, text }) => {
   const icon = {
@@ -12,10 +12,10 @@ const ItemTimelineOrder = ({ status, text }) => {
 
   if (status === "OK") {
     icon.name = "check";
-    icon.style = { ...styles.chip, backgroundColor: "#78EC6E" };
+    icon.style = { ...styles.chip, backgroundColor: colors.info.sucess };
   } else if (status === "NOK") {
     icon.name = "close";
-    icon.style = { ...styles.chip, backgroundColor: "red" };
+    icon.style = { ...styles.chip, backgroundColor: colors.info.error };
   }
 
   return (

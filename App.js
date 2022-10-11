@@ -1,5 +1,4 @@
-import { StyleSheet, View } from "react-native";
-import Store from "./src/screens/Store";
+import Order from "./src/screens/Order";
 import ToolBar from "./src/components/ToolBar";
 import { StatusBar, SafeAreaView } from "react-native";
 import { ActivityIndicator, Stack } from "@react-native-material/core";
@@ -22,7 +21,7 @@ export default function App() {
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar />
       <ToolBar />
-      <Store />
+      <Order />
     </SafeAreaView>
   );
 }

@@ -1,17 +1,19 @@
 import React from "react";
 import { View, Text } from "react-native";
 import styles from "./style";
-import TextKeyValue from "./../../components/TextKeyValue";
-import { Divider, FAB, Stack } from "@react-native-material/core";
+import TextKeyValue from "../../components/TextKeyValue";
+import { Divider, FAB } from "@react-native-material/core";
 import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 import TimelineOrder from "./components/TimelineOrder";
-import IconTemplate from "./../../components/IconTemplate";
+import IconTemplate from "../../components/IconTemplate";
+import mock from "./mock.json"
+
 
 function Store() {
   return (
     <>
       <View style={styles.wrapperTitle}>
-        <Text style={styles.title}>MENU</Text>
+        <Text style={styles.title}>Menu</Text>
         <IconTemplate
           style={styles.icon}
           nameIcon="chevron-down"
@@ -20,20 +22,20 @@ function Store() {
         />
       </View>
 
-      <Text style={styles.subtitle}>COMPRA 00012345</Text>
+      <Text style={styles.subtitle}>Compra {mock.order}</Text>
       <View style={styles.card}>
         <View>
-          <Text style={styles.text}>RESUMO DO PEDIDO</Text>
+          <Text style={styles.text}>Resumo do Pedido</Text>
           <TextKeyValue keyLabel="Data" valueLabel="01/01/2000" />
           <TextKeyValue keyLabel="Valor" valueLabel="R$ 500,00" />
           <TextKeyValue keyLabel="Status" valueLabel="Cancelado" />
           <TextKeyValue keyLabel="Tipo de Frete" valueLabel="Correios" />
-          <Divider style={{ marginVertical: 20 }} color="#19A7B0" />
+          <Divider style={styles.divider}/>
         </View>
-        <Text style={styles.text}>STATUS DO PEDIDO</Text>
+        <Text style={styles.text}>Status do Pedido</Text>
         <View>
           <TimelineOrder />
-          <Divider style={{ marginVertical: 20 }} color="#19A7B0" />
+          <Divider style={styles.divider}/>
         </View>
       </View>
       <FAB

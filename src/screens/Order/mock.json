@@ -1,0 +1,13 @@
+{
+"id":"123158",
+"order": "00012345", 
+"dateCreated": "", 
+"dateUpdated": "", 
+"value":500, 
+"status":"cancelado", 
+"history": [
+    {"id":"PED", "status": "OK", "describe": "Pedido realizado 01/01/2020", "dateCreated":123 },
+    {"id":"PAG", "status": "OK", "describe": "Pagamento aprovado", "dateCreated":123 },
+    {"id":"NF", "status": "NOK", "describe": "Erro ao Gerar Nota Fiscal", "dateCreated":123 }]
+}
+

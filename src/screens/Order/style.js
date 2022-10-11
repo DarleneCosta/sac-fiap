@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import colors from "../../styles/colors"
 
 const styles = StyleSheet.create({
   wrapperTitle: {
@@ -12,7 +13,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 60,
     flexDirection: "row",
-    borderColor: "#19A7B0",
+    borderColor: colors.primary.main
   },
   title: {
     fontWeight: "bold",
@@ -22,6 +23,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     marginLeft: "30%",
     marginRight: "20%",
+    textTransform: 'uppercase'
   },
   subtitle: {
     fontSize: 20,
@@ -31,9 +33,10 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
     paddingTop: 20,
     fontWeight: "800",
+    textTransform: 'uppercase'
   },
   card: {
-    backgroundColor: "rgba(208, 237, 237, 0.5)",
+    backgroundColor: colors.primary.light,
     margin: 30,
     padding: 15,
     borderRadius: 8,
@@ -43,10 +46,15 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     fontWeight: "900",
     fontSize: 14,
+    textTransform: 'uppercase'
   },
   icon: {
     marginLeft: 50,
   },
+  divider: {
+    color: colors.primary.main,
+    marginVertical: 20
+  }
 });
 
 export default styles;
