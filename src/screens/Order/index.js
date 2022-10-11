@@ -7,8 +7,7 @@ import Icon from "@expo/vector-icons/MaterialCommunityIcons";
 import TimelineOrder from "./components/TimelineOrder";
 import IconTemplate from "../../components/IconTemplate";
 import mock from "./mock.json"
-
-
+import utils from "../../utils";
 function Store() {
   return (
     <>
@@ -26,8 +25,8 @@ function Store() {
       <View style={styles.card}>
         <View>
           <Text style={styles.text}>Resumo do Pedido</Text>
-          <TextKeyValue keyLabel="Data" valueLabel="01/01/2000" />
-          <TextKeyValue keyLabel="Valor" valueLabel="R$ 500,00" />
+          <TextKeyValue keyLabel="Data" valueLabel={utils.formatDate(mock.dateCreated)} />
+          <TextKeyValue keyLabel="Valor" valueLabel={`R$ ${utils.formatToBRL(mock.value)}`}/>
           <TextKeyValue keyLabel="Status" valueLabel="Cancelado" />
           <TextKeyValue keyLabel="Tipo de Frete" valueLabel="Correios" />
           <Divider style={styles.divider}/>
